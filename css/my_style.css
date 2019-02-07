@@ -60,6 +60,7 @@ h2{
     font-size: 25px;
     color:black;
     text-align:justify;
+    max-width: 800px;
 }
 .info ul{
     list-style-type:square;
