@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Страница-визитка</title>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="css/my_style.css">
+    <script src="js/script_for_validate_forms.js"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="logo" />
+        <h1>Страница-визитка</h1>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li><a href="#p1">Общая информация</a></li>
+            <li><a href="#p2">Образование</a></li>
+            <li><a href="#p3">Хобби</a></li>
+            <li><a href="#p4">Обратная связь</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2 id="p1">Общая информация</h2>
+        <article class="photo">
+            <img src="img/My_photo_small.jpg" alt="Здесь должно быть фото">
+        </article>
+        <aside class="info">
+            <ul>
+                <li>ФИО: Сидоренко Наталия Сергеевна</li>
+                <li>Дата рождения: 26.05.1997</li>
+                <li>Место рождения: г.Ноябрьск</li>
+                <li>Место проживания: г.Севастополь</li>
+                <li>Место учебы: СевГУ</li>
+                <li>Направление: Информационные системы и технологии</li>
+                <li>Профиль: Геоинформационные системы и технологии</li>
+                <li>Курс: 3</li>
+            </ul>
+        </aside>
+    </section>
+    <hr>
+    <section>
+        <h2 id="p2">Образование</h2>
+        <article class="education">
+            C 2004 по 2015 г. обучалась в среднеобразовательной школе №9 г. Ноябрьск.
+            <br>C 2004 по 2012 г. обучалась в детской музыкальной школе №2 г. Ноябрьск по классу "хоровое пение".
+            <br>C 2015 по 2017 г. обучалась в филиале МГУ в г.Севастополь по направлению "Прикладная математика и информатика".
+            <br>C 2017 г. - студент кафедры информационных систем по направлению "Информационные системы и технологии" Севастопольского государственного университета.
+        </article>
+    </section>
+    <hr>
+    <section>
+        <h2 id="p3">Хобби</h2>
+        <article class="hobby">
+            <img src="img/hobby1.jpg" alt="Здесь должно быть хобби1" title="Вышивание крестиком">
+            <img src="img/hobby2.jpg" alt="Здесь должно быть хобби2" title="Собирание паззлов">
+            <img src="img/hobby3.jpg" alt="Здесь должно быть хобби4" title="Прогулки по городу">
+        </article>
+    </section>
+    <hr>
+    <section>
+        <h2 id="p4">Обратная связь</h2>
+        <form name="commentary" method="post">
+            <fieldset class="contact">
+                <legend>Контактная информация</legend>
+                <p><label>ФИО </label><input name="fio" id="fio" type="text" size="50" onBlur="Check_FIO(this),Check()" onclick="this.select()"></p>
+                <p><label>Телефон </label><input name="phone" id="phone" type="text" size="40" onBlur="Check_Phone(this),Check()" onclick="this.select()"></p>
+                <p><label>E-mail </label><input name="email" id="email" type="email" size="45" onBlur="Check_Email(this),Check()" onclick="this.select()"></p>
+            </fieldset>
+            <fieldset class="contact">
+                <legend>Поле ввода комментария</legend>
+                <textarea name="comment" id="comment" rows="5" cols="50" onBlur="Check_Text(this),Check()" onclick="this.select()" ></textarea>
+                <p><label>Согласие на обработку информации </label><input type="checkbox" id="checkbox" onclick="Check()"></p>
+            </fieldset>
+                <p><input type="submit" id="submit" value="Отправить" disabled="true"></p>
+        </form>
+    </section>
+    <footer>
+        <p>&copy 2019</p>
+        <a href="https://vk.com/natasid89"><img src="img/vk_icon48.png"></a>
+        <a href="https://github.com/snata97"><img src="img/github_icon48.png"></a>
+        <a href="mailto:snata97@mail.ru"><img src="img/mail_icon48.png"></a>
+    </footer>
+</body>
+</html>

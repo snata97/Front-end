@@ -1,0 +1,108 @@
+* {font-family: 'Playfair Display';}
+body {
+    margin: 0;
+    background: linear-gradient(80deg, #FFFFFF, #007A7A);
+}
+header{
+    background: #F2FDFF;
+    height: 100px;
+}
+footer{
+    background: #F2FDFF;
+    height: 80px;
+}
+header img {
+    float: left;
+    width: auto;
+    height: 100px;
+}
+header h1{
+    position:relative;
+    top: 30px;
+    font-size: 40px;
+    color:#242F30;
+}
+.menu{
+    background: #F2FDFA;
+    position: fixed;
+    top: 0;
+    margin-top: 0;
+    width: 100%;
+    z-index:100;
+}
+.menu A{
+    text-decoration:none;
+    outline: none;
+}
+ul.menu li {
+    list-style: none;
+    padding: 90px;
+    display:inline;
+    position: relative;
+    cursor: pointer;
+    font-size: 25px;
+}
+h2{
+    font-size: 30px;
+    color:black;
+}
+.photo{
+    display: inline-block;
+    margin-left: 100px;
+    border: 5px solid #F2FDFF;
+}
+.photo img {
+    display: block;
+}
+.info{
+    padding-top: 0;
+    display: inline-block;
+    font-size: 25px;
+    color:black;
+    text-align:justify;
+}
+.info ul{
+    list-style-type:square;
+}
+.info li{
+    margin: 30px;
+}
+.education{
+    font-size: 25px;
+    color:black;
+}
+.hobby>img{
+    display: inline-block;
+    margin-left: 150px;
+    border: 5px solid #F2FDFF;
+    width: auto;
+    max-height: 200px;
+
+}
+.contact{
+    border : 1px solid black;
+    font-size: 25px;
+}
+section{
+    min-width: 500px;
+}
+input[type=checkbox]{
+    transform: scale(2);
+}
+input[type=submit]{
+    font-size: 20px;
+    margin-left: 20px;
+}
+footer>p{
+    font-size: 25px;
+    display: inline-block;
+    vertical-align: middle;
+}
+footer>a>img{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+A:link {color: black;}
+A:visited {color: black;}
+A:hover {color:#00CBCC}
