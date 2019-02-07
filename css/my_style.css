@@ -22,6 +22,9 @@ header h1{
     font-size: 40px;
     color:#242F30;
 }
+p{
+    font-size: 25px;
+}
 .menu{
     background: #F2FDFA;
     position: fixed;
@@ -98,9 +101,14 @@ input[type=submit]{
 input[type=text]{
     font-size: 20px;
 }
+textarea{
+    resize:none;
+    font-size: 20px;
+}
 input[type=email]{
     font-size: 20px;
 }
+
 footer>p{
     font-size: 25px;
     display: inline-block;
