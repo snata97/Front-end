@@ -21,7 +21,7 @@ function Check_Phone(input_date){
 	var phone = document.getElementById('phone');
 	var input = input_date.value;
 	if(input.length!==0){
-		MyReg_PHONE=/^[+][37][0-9]{8,10}$/;
+		MyReg_PHONE=/^[+][37][0-9]{10}$/;
 		if(!(MyReg_PHONE.test(input))) {
 			OutErrorCaption(phone,"Введите номер телефон в правильном формате (+7 или +3 и остальные 10 цифр номера телефона)","capt_phone");
 			return false;
